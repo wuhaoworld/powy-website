@@ -31,14 +31,11 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Link href=''>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-blue-600 hover:border-blue-700">
+              <Link target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLSduVESbMGdrMV_3TPhOJalDj05ebNZC6b1ZHtNxrQOR4X906g/viewform?usp=dialog'>
+                <button className="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-blue-600 hover:border-blue-700">
                   Join Waitlist
                 </button>
               </Link>
-              {/* <button className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-gray-400 font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200">
-                Watch Demo
-              </button> */}
             </div>
 
             {/* Key Stats */}
@@ -262,8 +259,8 @@ export default function Home() {
             Join professionals who trust Powy to preserve their content's intelligence while saving hours of manual formatting work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href=''>
-              <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-white hover:border-gray-100">
+            <Link target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLSduVESbMGdrMV_3TPhOJalDj05ebNZC6b1ZHtNxrQOR4X906g/viewform?usp=dialog'>
+              <button className="bg-white text-blue-600 hover:bg-gray-100 cursor-pointer font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-white hover:border-gray-100">
                 Join Waitlist
               </button>
             </Link>
