@@ -298,14 +298,14 @@ export default function Home() {
               <span className="text-xl font-bold">Powy</span>
             </div>
 
-            <div className="flex gap-8 text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <div className="flex gap-8 text-sm text-gray-400">
+              <Link href="/terms" target="_blank" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="privacy" target="_blank" className="hover:text-white transition-colors">Terms of Service</Link>
               <a href="#" className="hover:text-white transition-colors">Contact</a>
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
             <p>&copy; 2025 Powy. PowerPoint, made easy.</p>
           </div>
         </div>

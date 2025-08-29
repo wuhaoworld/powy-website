@@ -23,14 +23,27 @@ This is a Next.js 15 project using the App Router architecture with the followin
 
 - **App Router**: Uses `app/` directory structure (not pages)
 - **Path aliases**: `@/*` maps to project root
+- **TypeScript**: Strict mode enabled with bundler module resolution
 - **Dark mode**: CSS variables with `prefers-color-scheme` media query support
-- **Fonts**: Custom CSS variables for Geist fonts loaded in layout
+- **Fonts**: Custom CSS variables for Geist fonts loaded in root layout
 
 ### Project Structure
 
-- `app/layout.tsx`: Root layout with font configuration and metadata
-- `app/page.tsx`: Main home page (currently minimal)
-- `app/globals.css`: Global styles with Tailwind imports and CSS variables
-- **Public assets**: Located in `public/` including `powy.jpeg`
+- `app/layout.tsx`: Root layout with font configuration, metadata, and global styles
+- `app/page.tsx`: Landing page with complete hero, features, and CTA sections
+- `app/privacy/page.tsx`: Privacy policy page (placeholder content)
+- `app/globals.css`: Global styles with Tailwind v4 imports and CSS variables
+- `public/images/`: Feature icons and illustrations for the landing page
+- `public/logo.png`: Main Powy logo used throughout the site
 
-This appears to be a website for "Powy" based on the project name and assets.
+## Product Context
+
+This is the marketing website for **Powy**, an AI-powered tool that transforms complex documents (PDFs, Word docs, etc.) into professional, fully-editable PowerPoint presentations. The site targets consultants, analysts, academics, and marketing professionals who need to convert dense documents while preserving content depth and maintaining brand consistency.
+
+### Key Features Highlighted
+- Deep document understanding that preserves logic and structure
+- Native .pptx output (not web links or locked formats)
+- High-fidelity conversion of complex elements (tables, charts, formulas)
+- Enterprise brand template support
+
+The main landing page is comprehensive with hero section, problem statement, feature showcase, target audience, and call-to-action sections leading to a Google Forms waitlist.
