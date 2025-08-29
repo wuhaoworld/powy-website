@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Powy: PowerPoint, made easy",
   description: "Transform complex documents into professional, fully-editable PowerPoint presentations with AI that understands your content's depth and logic.",
   icons: {
-    icon: "/powy.jpeg",
-    shortcut: "/powy.jpeg",
-    apple: "/powy.jpeg",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 

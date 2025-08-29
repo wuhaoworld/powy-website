@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,34 +11,36 @@ export default function Home() {
             {/* Logo */}
             <div className="flex justify-center mb-8">
               <Image
-                src="/powy.jpeg"
+                src="/logo.png"
                 alt="Powy Logo"
                 width={90}
                 height={90}
                 className="rounded-3xl shadow-lg"
               />
             </div>
-            
+
             {/* Main Headline */}
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               Powy: PowerPoint, <span className="text-blue-600 dark:text-blue-400">made easy</span>
             </h1>
-            
+
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
               Transform complex documents into professional, fully-editable PowerPoint presentations with AI that understands your content's depth and logic.
             </p>
-            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-blue-600 hover:border-blue-700">
-                Try Powy Free
-              </button>
-              <button className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-gray-400 font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200">
+              <Link href=''>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-blue-600 hover:border-blue-700">
+                  Join Waitlist
+                </button>
+              </Link>
+              {/* <button className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-gray-400 font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200">
                 Watch Demo
-              </button>
+              </button> */}
             </div>
-            
+
             {/* Key Stats */}
             <div className="flex flex-wrap justify-center gap-8 text-gray-600 dark:text-gray-400">
               <div className="flex items-center gap-2">
@@ -66,29 +69,29 @@ export default function Home() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">📄</span>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Image src='/images/content.png' width={50} height={50} alt='' />
                 </div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Shallow Content</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">AI tools produce "4th-grade level" content, losing the depth and logic of your original documents</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🔒</span>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Image src='/images/locked.png' width={50} height={50} alt='' />
                 </div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Format Lock-in</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">Web links or locked PDFs instead of editable .pptx files that fit your workflow</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🎨</span>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Image src='/images/graphic-design.png' width={50} height={50} alt='' />
                 </div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Brand Mismatch</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">Generic templates that don't match your company's brand guidelines</p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">📊</span>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Image src='/images/poor-complex.png' width={50} height={50} alt='' />
                 </div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Poor Complex Elements</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">Cannot handle charts, tables, and mathematical formulas properly</p>
@@ -109,13 +112,13 @@ export default function Home() {
               Powy isn't just another text-to-slides generator. It's a professional document transformation engine designed for knowledge workers who demand quality and control.
             </p>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Feature 1 */}
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🧠</span>
+                  <Image src='/images/deep-learning.png' width={50} height={50} alt='' />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -135,7 +138,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">📁</span>
+                  <Image src='/images/pptx.png' width={40} height={40} alt='' />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -155,7 +158,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">📈</span>
+                  <Image src='/images/accurate.png' width={40} height={40} alt='' />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -175,7 +178,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🏢</span>
+                  <Image src='/images/reputation.png' width={50} height={50} alt='' />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -205,12 +208,12 @@ export default function Home() {
               Powy serves knowledge workers who value quality and efficiency in their presentation workflows
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {/* Consultants & Analysts */}
             <div className="text-center p-6">
-              <div className="w-20 h-20 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">💼</span>
+              <div className="w-24 h-24 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Image src='/images/analyst.png' width={60} height={60} alt='' />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Consultants & Financial Analysts
@@ -222,8 +225,8 @@ export default function Home() {
 
             {/* Academics & Researchers */}
             <div className="text-center p-6">
-              <div className="w-20 h-20 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">🎓</span>
+              <div className="w-24 h-24 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Image src='/images/scholar.png' width={60} height={60} alt='' />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Academics & Researchers
@@ -235,8 +238,8 @@ export default function Home() {
 
             {/* Marketing & Strategy */}
             <div className="text-center p-6">
-              <div className="w-20 h-20 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">📊</span>
+              <div className="w-24 h-24 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Image src='/images/marketing.png' width={60} height={60} alt='' />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Marketing & Strategy Teams
@@ -259,14 +262,13 @@ export default function Home() {
             Join professionals who trust Powy to preserve their content's intelligence while saving hours of manual formatting work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-white hover:border-gray-100">
-              Start Free Trial
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200">
-              Schedule Demo
-            </button>
+            <Link href=''>
+              <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-6 py-2 rounded-lg text-lg transition-colors duration-200 border-2 border-white hover:border-gray-100">
+                Join Waitlist
+              </button>
+            </Link>
           </div>
-          
+
           <div className="mt-12 flex flex-wrap justify-center gap-8 text-blue-100">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -290,7 +292,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-4 mb-6 md:mb-0">
               <Image
-                src="/powy.jpeg"
+                src="/logo.png"
                 alt="Powy Logo"
                 width={40}
                 height={40}
@@ -298,14 +300,14 @@ export default function Home() {
               />
               <span className="text-xl font-bold">Powy</span>
             </div>
-            
+
             <div className="flex gap-8 text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-white transition-colors">Contact</a>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Powy. PowerPoint, made easy.</p>
           </div>
