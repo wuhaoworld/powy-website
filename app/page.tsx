@@ -21,7 +21,7 @@ export default function Home() {
 
             {/* Main Headline */}
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Powy: PowerPoint, <span className="text-blue-600 dark:text-blue-400">made easy</span>
+              Powy: PowerPoint, <span className="text-blue-600 dark:text-blue-400">made easy.</span>
             </h1>
 
             {/* Subheadline */}
